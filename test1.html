@@ -58,11 +58,11 @@
     //     document.write(k+"<br>"+s)
     // }
     
-    // for(i=2;i<10;i++){
-    //     for(j=1;j<10;j++) {
-    //         document.write(i+"x"+j+"="+(i*j)+"<br>");
-    //     }
-    // }  
+    for(i=2;i<10;i++){
+        for(j=1;j<10;j++) {
+            outprint(i,j);
+        }
+    }  
  
     // for(i=0;i<=100;i++){
     //     if(i%2==1){
@@ -101,7 +101,19 @@
         }
     }
 
-    
+    /*
+    함수(function) - 반환값 타입선언 없음.
+    function f1(i, str){
+
+    }
+    */
+
+    function outprint(x,y){
+        document.write(x+"x"+y+"="+(x*y)+"<br>");
+    }
+    // function outprint(x,y){
+    //     str=x+"x"+y+"="+(x*y)+"<br>";
+    // }
     
 
 </script>
