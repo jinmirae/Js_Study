@@ -64,11 +64,45 @@
     //     }
     // }  
  
-    for(i=0;i<=100;i++){
-        if(i%2==1){
+    // for(i=0;i<=100;i++){
+    //     if(i%2==1){
+    //         document.write(i+"<br>")
+    //     }
+    // }
+
+    // a=1;
+    // b=1;
+    // document.write(a+"<br>");
+    // document.write(b+"<br>");
+    // // sum=a+b;
+    // // for(i=1;i<sum;i++) {
+    // //     sum=a+b;
+    // //     if(sum<1000) { 
+    // //         document.write(sum+"<br>")
+    // //         a=b;
+    // //         b=sum;
+    // //     }
+    // // }
+    
+    // while(a+b<1000) {
+    //     sum=a+b;
+    //     document.write(sum+"<br>");
+    //     a=b;
+    //     b=sum;
+    // }  
+    for(i=2;i<=100;i++) {
+        for(j=2;j<i;j++) {
+            if(i % j == 0) {
+                break;
+            }
+        }
+        if(i==j) {
             document.write(i+"<br>")
         }
     }
+
+    
+    
 
 </script>
 <body>
