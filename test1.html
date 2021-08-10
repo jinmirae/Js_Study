@@ -58,11 +58,11 @@
     //     document.write(k+"<br>"+s)
     // }
     
-    for(i=2;i<10;i++){
-        for(j=1;j<10;j++) {
-            outprint(i,j);
-        }
-    }  
+    // for(i=2;i<10;i++){
+    //     for(j=1;j<10;j++) {
+    //         outprint(i,j);
+    //     }
+    // }  
  
     // for(i=0;i<=100;i++){
     //     if(i%2==1){
@@ -90,16 +90,16 @@
     //     a=b;
     //     b=sum;
     // }  
-    for(i=2;i<=100;i++) {
-        for(j=2;j<i;j++) {
-            if(i % j == 0) {
-                break;
-            }
-        }
-        if(i==j) {
-            document.write(i+"<br>")
-        }
-    }
+    // for(i=2;i<=100;i++) {
+    //     for(j=2;j<i;j++) {
+    //         if(i % j == 0) {
+    //             break;
+    //         }
+    //     }
+    //     if(i==j) {
+    //         document.write(i+"<br>")
+    //     }
+    // }
 
     /*
     함수(function) - 반환값 타입선언 없음.
@@ -108,16 +108,20 @@
     }
     */
 
-    function outprint(x,y){
-        document.write(x+"x"+y+"="+(x*y)+"<br>");
-    }
+    // function outprint(x,y){
+    //     document.write(x+"x"+y+"="+(x*y)+"<br>");
+    // }
     // function outprint(x,y){
     //     str=x+"x"+y+"="+(x*y)+"<br>";
     // }
-    
+    function setName() {
+        k=prompt("Your name:","");
+        document.getElementsByName('pname')[0].value=k;
+    }
 
 </script>
 <body>
-    <h1>Hello</h1>
+<input type="text" name="pname"><br><br>
+<input type="button" name="btnGo" value="이름보이기" onclick="setName()">
 </body>
 </html>
