@@ -13,7 +13,7 @@
 </body>
 <script>
 var arPoint=[]; // arPoint.length
-
+let gn;
 function getPoint() {
     arPoint.push(document.getElementsByName('point')[0].value);
     //point안의 점수값을 읽어서
@@ -26,10 +26,23 @@ function getResult() {
     }
     avg= sum/arPoint.length;
     alert("합계"+sum+"\n"+"평균"+avg)
+    // setTimeout(showText,3000);
+    // setTimeout(함수명,지연시간(ms));
+    gn=2;
+    setInterval(showText,2000);
+    // setTimeout(function() { //익명함수 (Anonymous Function)
+    //     document.getElementsByName("point")[0].value="3초가 지났습니다.";
+    // },3000);
+    
     //합계/평균을 구해서
     //alert로 출력
     //합계:
     //평균:
+}
+function showText(){
+    // document.getElementsByName("point")[0].value="3초가 지났습니다.";
+    document.getElementsByName("point")[0].value=gn+"초가 지났습니다.";
+    gn+=2;
 }
 </script>
 </html>
