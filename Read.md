@@ -27,3 +27,4 @@ Typescript -> Node.js(서버개발언어)
 
 실수처리 = parseFloat() 예 -> avg=parseFloat(sum/arPoint.length)
 소수처리 = toFixed() ()안은 소수점 자리수 예 -> alert('합계 :'+sum+'\n평균 : '+avg.toFixed(2)) 0.00
+
