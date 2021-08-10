@@ -14,4 +14,16 @@
     ../../Realtec
     (DBMS->Realtec)
     ../Program Files/Realtec
-    
+
+배열 <- getElementsByName
+배열 <- getElementsByTagname
+값 <- getElementById
+
+Java -> Spring (서버프레임워크)
+Javascript -> react.js, Vue.js, Angular.js(클라이언트)
+Typescript -> Node.js(서버개발언어)
+
+(JavaScript Object Notation) -> JSON(제이슨) 
+
+실수처리 = parseFloat() 예 -> avg=parseFloat(sum/arPoint.length)
+소수처리 = toFixed() 예 -> alert('합계 :'+sum+'\n평균 : '+avg.toFixed(2))
