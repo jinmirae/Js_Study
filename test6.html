@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+점수:<input type="text" name="point" id="point" value="30"><br>
+<input type="button" name="btnPoint" id="btnPoint" value="Stop"><br>
+<input type="button" name="btnCalc" id="btnCalc" value="Show" ><br>
+<input type="button" name="btnClear" id="btnClear" value="Clear" ><br>  
+<!-- 이벤트(event)
+blur : focus가 떠났을때
+focus : 마우스 왼쪽버튼이  눌려서 focus가 들어왔을 때.
+click : 마우스 왼쪽버튼이 클릭됐을때
+dibclick : 마우스 왼쪽버튼이 더블클릭 됬을 때
+change : html tag 안의 값이 변경됐을 때    
+  -->
+</body>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+// function doStop(){
+//     console.log("doStop");
+// }
+//k=document.getElementsById("point").value;
+// $("#point").val(50);
+// k=$("#point").val();
+$(document)
+.on("click","#btnCalc",function(){
+    $("#point").val(100);
+})
+.on("click","#btnClear",function(){
+    $("#point").val("");
+})
+.on
+
+// 방식이 두가지
+// $("#btnCalc").click(function(){
+//     console.log("btnCalc 클릭");
+// });
+// $("#btnPoint").click(function(){
+//     console.log("btnPoint 클릭");
+// });
+</script>
+</html>
